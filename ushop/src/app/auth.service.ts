@@ -15,7 +15,7 @@ export class AuthService {
   login() {
     // returnUrl gets the query params of the last route you tried to access
     // if there are params go to that route else go home
-    // note: if there are query params that means user tried to get into unautorized route
+    // note: if there are query params that means user tried to get into unautorized route else navigate to home page
     let returnUrl = this.route.snapshot.queryParamMap.get('returnUrl') || '/';
     localStorage.setItem('returnUrl', returnUrl);
 
