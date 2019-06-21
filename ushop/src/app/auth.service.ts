@@ -17,7 +17,7 @@ export class AuthService {
     private afAuth: AngularFireAuth,
     private route: ActivatedRoute) {
     this.user$ = afAuth.authState;
-    console.log('called auth constructor');
+    // console.log('called auth constructor');
   }
 
   login() {
